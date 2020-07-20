@@ -11,8 +11,8 @@ df = transactions_repository_prepared.get_dataframe()
 
 ### BUSINESS LOGIC : Call to the fraud features library
 
-df['count_frauds_company'] = windows.LaggedSum(df, 'id_company', 'date', 'fraude')
-df = df[['ref_id','id_company','count_frauds_company']]
+df['prev_frauds_by_company'] = windows.LaggedSum(df, 'id_company', 'date', 'fraude')
+df = df[['ref_id','id_company','prev_frauds_by_company']]
 
 ###
 
