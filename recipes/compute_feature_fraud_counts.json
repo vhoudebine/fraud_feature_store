@@ -21,18 +21,18 @@
     "main": {
       "items": [
         {
-          "ref": "feature_fraud_counts",
+          "ref": "offline_feature_email_counts",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595248163926
+    "lastModifiedOn": 1595258023629
   },
   "creationTag": {
     "versionNumber": 0,
