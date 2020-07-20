@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595262029989
+    "lastModifiedOn": 1595262057797
   },
   "creationTag": {
     "versionNumber": 0,
@@ -69,7 +69,8 @@
       },
       {
         "name": "prev_frauds_by_email",
-        "type": "bigint"
+        "type": "bigint",
+        "comment": "Number of fraudulent transactions in the past for a specific email address"
       }
     ],
     "userModified": true
