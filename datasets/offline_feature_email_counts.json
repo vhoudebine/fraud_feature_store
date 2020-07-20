@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595258018095
+    "lastModifiedOn": 1595258023562
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,20 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "ref_id",
+        "type": "bigint"
+      },
+      {
+        "name": "prev_transactions_by_email",
+        "type": "bigint"
+      },
+      {
+        "name": "prev_frauds_by_email",
+        "type": "bigint"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
