@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595258126333
+    "lastModifiedOn": 1595258142126
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,21 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "ref_id",
+        "type": "bigint"
+      },
+      {
+        "name": "id_company",
+        "type": "bigint"
+      },
+      {
+        "name": "count_frauds_company",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
