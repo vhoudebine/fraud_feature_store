@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "email_domain"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "email_domain",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +26,10 @@
       "firstLastNotNull": false,
       "column": "ref_id",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -31,8 +44,10 @@
       "firstLastNotNull": false,
       "column": "date",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -47,8 +62,10 @@
       "firstLastNotNull": false,
       "column": "day_of_week",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -63,8 +80,10 @@
       "firstLastNotNull": false,
       "column": "hour_of_day",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -79,8 +98,10 @@
       "firstLastNotNull": false,
       "column": "type",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -95,8 +116,10 @@
       "firstLastNotNull": false,
       "column": "amount",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -111,8 +134,10 @@
       "firstLastNotNull": false,
       "column": "id_company",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -127,8 +152,10 @@
       "firstLastNotNull": false,
       "column": "remote_ip",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -143,8 +170,10 @@
       "firstLastNotNull": false,
       "column": "remote_ip_country",
       "count": false,
+      "$idx": 8,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -159,8 +188,10 @@
       "firstLastNotNull": false,
       "column": "card_mask",
       "count": false,
+      "$idx": 9,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -175,8 +206,10 @@
       "firstLastNotNull": false,
       "column": "card_country",
       "count": false,
+      "$idx": 10,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -191,8 +224,10 @@
       "firstLastNotNull": false,
       "column": "email",
       "count": false,
+      "$idx": 11,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -207,13 +242,16 @@
       "firstLastNotNull": false,
       "column": "fraude",
       "count": false,
-      "sum": false,
+      "$idx": 12,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -254,8 +292,31 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {
+    "fraude_sum": "prev_frauds_by_email",
+    "count": "prev_transactions_by_email"
+  },
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "email_domain",
+            "type": "string"
+          },
+          {
+            "name": "fraude_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
