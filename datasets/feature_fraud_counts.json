@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595257758119
+    "lastModifiedOn": 1595257767467
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,7 +65,7 @@
       {
         "name": "prev_transactions_by_email",
         "type": "bigint",
-        "comment": "OFFLINE FEATURE Number of previous transactions made by this email address, primary key is ref_id"
+        "comment": "Number of previous transactions made by this email address, primary key is ref_id"
       },
       {
         "name": "prev_frauds_by_email",
