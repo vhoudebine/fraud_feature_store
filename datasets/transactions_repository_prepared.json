@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595247866048
+    "lastModifiedOn": 1595247904763
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,6 +67,14 @@
         "type": "date"
       },
       {
+        "name": "day_of_week",
+        "type": "bigint"
+      },
+      {
+        "name": "hour_of_day",
+        "type": "bigint"
+      },
+      {
         "name": "type",
         "type": "bigint"
       },
@@ -87,10 +95,6 @@
         "type": "string"
       },
       {
-        "name": "remote_ip_tor",
-        "type": "bigint"
-      },
-      {
         "name": "card_mask",
         "type": "string"
       },
@@ -100,6 +104,10 @@
       },
       {
         "name": "email",
+        "type": "string"
+      },
+      {
+        "name": "email_domain",
         "type": "string"
       },
       {
