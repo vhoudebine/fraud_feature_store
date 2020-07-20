@@ -8,7 +8,8 @@
     "feature_store": {
       "remote": "git@github.com:vhoudebine/feature-store.git",
       "checkout": "refs/heads/master",
-      "remotePath": ""
+      "remotePath": "",
+      "lastHash": "151383a140b8e613613bbb2096c2e9d6d3dd8289"
     }
   },
   "pythonPath": [
