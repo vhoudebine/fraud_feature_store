@@ -5,16 +5,21 @@
   },
   "keys": [
     {
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
       "last": false,
       "max": false,
-      "column": "email_domain",
+      "firstLastNotNull": false,
+      "column": "email",
       "count": false,
+      "$idx": 11,
       "sum": false,
       "concat": false,
       "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -222,16 +227,14 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "email",
+      "column": "email_domain",
       "count": false,
       "$idx": 11,
       "sum": false,
       "concat": false,
       "type": "string",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
       "countDistinct": false,
+      "min": false,
       "avg": false,
       "stddev": false,
       "first": false
@@ -302,7 +305,7 @@
       "schema": {
         "columns": [
           {
-            "name": "email_domain",
+            "name": "email",
             "type": "string"
           },
           {
