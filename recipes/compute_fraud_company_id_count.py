@@ -18,5 +18,5 @@ df = df[['ref_id','id_company','count_frauds_company']]
 
 
 # BOILER PLATE CODE : Write recipe outputs
-fraud_company_id_count = dataiku.Dataset("fraud_company_id_count")
+fraud_company_id_count = dataiku.Dataset("offline_fraud_company_id_counts")
 fraud_company_id_count.write_with_schema(df)
