@@ -4,11 +4,17 @@
       "remote": "git@github.com:vhoudebine/feature-store.git",
       "checkout": "refs/heads/master",
       "remotePath": "feature_store"
+    },
+    "feature_store": {
+      "remote": "git@github.com:vhoudebine/feature-store.git",
+      "checkout": "refs/heads/master",
+      "remotePath": ""
     }
   },
   "pythonPath": [
     "python",
-    "/feature_store"
+    "/feature_store",
+    "feature_store"
   ],
   "rsrcPath": [
     "R"
