@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595258270641
+    "lastModifiedOn": 1595261982860
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,7 +59,7 @@
   "schema": {
     "columns": [
       {
-        "name": "email_domain",
+        "name": "email",
         "type": "string"
       },
       {
