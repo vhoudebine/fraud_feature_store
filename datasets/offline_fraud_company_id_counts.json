@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595258142126
+    "lastModifiedOn": 1595258236048
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,7 +67,7 @@
         "type": "bigint"
       },
       {
-        "name": "count_frauds_company",
+        "name": "prev_frauds_by_company",
         "type": "double"
       }
     ],
