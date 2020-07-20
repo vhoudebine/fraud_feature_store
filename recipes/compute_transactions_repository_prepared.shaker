@@ -25,8 +25,105 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "EmailSplitter",
+      "params": {
+        "column": "email"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "email_localpart"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "remote_ip_country"
+        ],
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
+        "type": "CountryMeaning"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "remote_ip_tor"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "-1",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "fraude"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "",
+        "outHourColumn": "hour_of_day",
+        "outYearColumn": "",
+        "column": "date",
+        "outDayOfWeekColumn": "day_of_week",
+        "timezone_id": "UTC",
+        "outDayColumn": ""
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +131,23 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "ref_id": 100,
+    "date": 183,
+    "amount": 100,
+    "fraude": 100,
+    "remote_ip_country": 143,
+    "id_company": 100,
+    "type": 100,
+    "remote_ip_tor": 113,
+    "remote_ip": 113,
+    "card_country": 105,
+    "email_domain": 134,
+    "card_mask": 141,
+    "email": 300,
+    "hour_of_day": 100,
+    "day_of_week": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
