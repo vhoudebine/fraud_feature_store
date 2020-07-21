@@ -7,6 +7,31 @@
     "objects": []
   },
   "projectType": "REGULAR",
+  "projectAppType": "REGULAR",
+  "bundleExporterSettings": {
+    "exportOptions": {
+      "exportUploads": false,
+      "exportManagedFS": false,
+      "exportAnalysisModels": false,
+      "exportSavedModels": false,
+      "exportManagedFolders": false,
+      "exportAllInputDatasets": false,
+      "exportAllDatasets": false,
+      "exportAllInputManagedFolders": false,
+      "exportGitRepository": false,
+      "exportInsightsData": false,
+      "useManualPluginsInfo": false,
+      "includedDatasetsData": [
+        {
+          "name": "transactions_repository",
+          "type": "UploadedFiles"
+        }
+      ],
+      "includedSavedModels": [],
+      "includedManagedFolders": [],
+      "shareAllInputDatasets": false
+    }
+  },
   "owner": "admin",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -52,11 +77,15 @@
     },
     "codeEnvs": {
       "python": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
         "preventOverride": false
       },
       "r": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "julia": {
+        "mode": "INHERIT",
         "preventOverride": false
       }
     },
@@ -107,9 +136,12 @@
           "initialReplicas": 1,
           "hpa": false,
           "hpaTargetCPUPercent": 0,
+          "hpaMetrics": [],
           "hpaMinPods": 0,
-          "hpaMaxPods": 0
-        }
+          "hpaMaxPods": 0,
+          "hpaAnnotations": []
+        },
+        "deploymentModifier": {}
       }
     }
   },
@@ -170,11 +202,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595259012216
+    "lastModifiedOn": 1595324438578
   },
   "creationTag": {
     "versionNumber": 0,
