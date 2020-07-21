@@ -146,7 +146,6 @@
     }
   },
   "name": "feature_store_fraud",
-  "projectStatus": "Deployment requested",
   "imgPattern": 6,
   "metrics": {
     "probes": [],
@@ -203,11 +202,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595325462685
+    "lastModifiedOn": 1595340654068
   },
   "creationTag": {
     "versionNumber": 0,
@@ -217,7 +216,9 @@
     "lastModifiedOn": 1595247040583
   },
   "shortDesc": "The project *feature_store_fraud* was created by Administrator on Jul 20th 2020",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
