@@ -145,7 +145,7 @@
       }
     }
   },
-  "name": "feature_store_fraud",
+  "name": "feature_store_fraud (dev)",
   "imgPattern": 6,
   "metrics": {
     "probes": [],
@@ -202,11 +202,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595340654068
+    "lastModifiedOn": 1595340656559
   },
   "creationTag": {
     "versionNumber": 0,
@@ -215,7 +215,7 @@
     },
     "lastModifiedOn": 1595247040583
   },
-  "shortDesc": "The project *feature_store_fraud* was created by Administrator on Jul 20th 2020",
+  "shortDesc": "The project *feature_store_fraud* was created by Administrator on Jul 20th 2020\nThe project *FEATURE_STORE_FRAUD_DEV_1* was copied from *FEATURE_STORE_FRAUD* by Administrator on Jul 21st 2020",
   "tags": [
     "duplicated"
   ],
